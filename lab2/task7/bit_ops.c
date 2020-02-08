@@ -11,7 +11,7 @@ unsigned * get_bits(unsigned x,
    return NULL;
     // YOUR CODE HERE
     // Returning NULL is a placeholder
-    // get_bits dynamically allocates an array a and set a[i] = 1 when i-th bit
+    // get_bits dynamically allocates an array a and set a[i] = 1 when (i+start)-th bit
     // of x is 1, otherwise siet a[i] = 0;
     // At last, get_bits returns the address of the array.
 }
@@ -25,7 +25,7 @@ void set_bits(unsigned * x,
     // YOUR CODE HERE
     // No return value
     // v points to an array of at least (end-start+1) unsigned integers.
-    // if v[i] == 0, then set i-th bit of x zero, otherwise, set i-th bit of x one.
+    // if v[i] == 0, then set (i+start)-th bit of x zero, otherwise, set (i+start)-th bit of x one.
 }
 
 // Flip the bits of x within range [start, end], in which both are inclusive.
