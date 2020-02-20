@@ -1,0 +1,19 @@
+1. Simply copy build_and_test.sh and tests_lab* under your local repo CS232
+
+2. To test all your tasks under lab*, you can launch test script:
+./build_and_test.sh lab*
+for instance
+./build_and_test.sh lab3 
+to test lab3
+
+3. Do not fret when you see your code has failed to pass a test -- take a look 
+at the diff result. If the difference is merely blank/tab/spaces/uppercases/typos
+that does not have anything to do with actual functionalities of the task, then 
+it is minor, because I do review it in the second pass. However, if any mismatch 
+comes from failures of required functionalities, then you should treat it seriously.
+
+4. Again, your code must build without any errors or warnings.
+
+5. Last but not least, passing tests does not mean full points guaranteed. It means
+that if your code have satisified all requirements, then it is likely not going to 
+lose major points. 
