@@ -18,11 +18,11 @@ int main (int argc, char ** argv) {
 }
 
 int dump_all(node_t * x) {
-    printf("x -> %s\n", x->value);
+    printf("x -> %s", x->value);
     node_t * y = x->next;
-    printf("%s\n", y->value);
+    printf(" %s", y->value);
     node_t * z = y->next;
-    printf("%s\n", z->value);
+    printf(" %s\n", z->value);
     if(z->next != x) {
     	printf("failed");
 	return -1;
