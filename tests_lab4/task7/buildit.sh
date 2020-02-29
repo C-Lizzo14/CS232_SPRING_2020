@@ -1,12 +1,14 @@
 #!/bin/bash
 . ./buildcmd.sh
+#set -x
 RED='\033[0;31m'
 NC='\033[0m'
 YELLOW='\033[1;33m'
 GREEN='\033[0;32m'
 echo "$cmd"
 echo "*******Now start building***************"
-output=`$cmd 2<&1`
+make clean
+output=`2>&1 1>/dev/null make`
 echo $output
 
 if [[ -z $output ]]; then
