@@ -7,3 +7,6 @@ struct snode {
   struct snode *next;
 };
 
+struct snode *snode_create(char *s, int length) ;
+void snode_destroy(struct snode * s) ;
+ 
