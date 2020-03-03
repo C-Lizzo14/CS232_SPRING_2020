@@ -13,7 +13,7 @@ void teardown(/*what parameter?*/) {
     //You are not allowed to use globals
 }
 
-void add(node_t * head, char * str, int length){
+void add(node_t ** head, char * str, int length){
     //TODO: copy add func from task2
 }
 void delete_node_at(node_t * head, int idx) {
@@ -28,7 +28,7 @@ void delete_node_key(node_t *head, char * key) {
 void dump_all(node_t*);
 int main (int argc, char ** argv) {
     node_t * head = setup();
-    add(head, "hi", 2);
+    add(&head, "hi", 2);
     delete_node_key(head, "prof");
     delete_node_at(head, 0);
     dump_all(head);
